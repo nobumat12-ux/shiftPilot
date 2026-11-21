@@ -1,8 +1,10 @@
-# ShiftPilot v0.5.6 (PWA試作版)
+# ShiftPilot v0.5.7 (prototype)
 
-- 希望提出「出勤不可」を、契約・希望からのシフト新規生成時に **×** として保持します。
-- 月間シフトと印刷に×を表示し、部門設定から淡い緑色の背景色を変更できます。
-- リーダー人数計などの集計列を幅の狭い列として表示します。
-- PWAキャッシュキーを更新しました。
+Changes:
+- Adjustable staffing threshold colors (below minimum / at-or-above excess), in monthly-shift view and print.
+- Optional colored background for "additional shift available" request days.
+- Print CSS asks browser to preserve background color. Chrome/Safari print settings may require enabling background graphics.
+- Existing localStorage data is preserved. Authentication, shared DB, push notifications and role handoff are **not yet implemented**.
+- "Other department support" needs distinct incoming/outgoing assignment modeling and is not implemented in this release.
 
-GitHub Pagesに `index.html` と `service-worker.js` を更新してください。その他のPWA関連ファイルは継続利用します。実社員情報や機密情報は入力しないでください。
+Upload index.html and service-worker.js to the GitHub Pages repo root. Demo data only.

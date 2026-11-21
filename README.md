@@ -1,10 +1,12 @@
-# ShiftPilot v0.5.7 (prototype)
+# ShiftPilot v0.5.8 (PWA prototype)
 
-Changes:
-- Adjustable staffing threshold colors (below minimum / at-or-above excess), in monthly-shift view and print.
-- Optional colored background for "additional shift available" request days.
-- Print CSS asks browser to preserve background color. Chrome/Safari print settings may require enabling background graphics.
-- Existing localStorage data is preserved. Authentication, shared DB, push notifications and role handoff are **not yet implemented**.
-- "Other department support" needs distinct incoming/outgoing assignment modeling and is not implemented in this release.
+前版 v0.5.7 を継承し、希望提出に「他部門応援」を追加。
 
-Upload index.html and service-worker.js to the GitHub Pages repo root. Demo data only.
+- 日別の応援希望：応援先（任意）、開始・終了、休憩を入力。
+- 曜日一括操作：選択曜日を応援に設定／応援を解除。曜日の変更や追加も可能。
+- 下書きと正式提出は分離。期限内の再提出は変更履歴・管理者タスクに記録。
+- 月間シフト作成で「応援」を反映。個人出勤日数には含み、自部門の人数集計から除外。
+- 応援勤務は月間シフトの編集およびA4印刷に対応。
+
+注意：本版は端末内保存の試作品です。本名・社員番号等の実データを入力しないでください。
+PWAの更新時には index.html と service-worker.js をGitHubに反映してください。
